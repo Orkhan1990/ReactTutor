@@ -1,0 +1,62 @@
+.entrance_container {
+    background:url('../../images/cinema.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.bg_opocity{
+    background:rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.entrance_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.login_btn {
+    background: rgba(217, 217, 217, 0.16);
+    border: 1px solid #FFFFFF;
+    border-radius: 90px;
+    padding: 9px 105px 10px 104px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.login_btn:hover{
+    background: #ddd;
+
+
+}
+
+.sign_up_btn {
+    background: #C00511;
+    border: 2px solid #C00511;
+    border-radius: 90px;
+    padding: 9px 97px 9px 97px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.sign_up_btn:hover{
+    background:#b16c71;
+
+}
+.link_sign_up{
+    color:#FFFFFF;
+}
+.link_login{
+    color: #C00511;
+}
