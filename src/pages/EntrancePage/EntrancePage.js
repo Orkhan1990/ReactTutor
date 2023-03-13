@@ -10,8 +10,8 @@ export default class EntrancePage extends Component {
         <div className='bg_opocity'>
            <Logo/>
            <div className='entrance_btns'>
-           <button className='login_btn'><Link to="" className='link_login'>Login</Link></button>
-           <button className='sign_up_btn'><Link to="" className='link_sign_up'>Sign up</Link></button>
+           <Link to="/login" ><button className='login_btn'>Login</button></Link>
+           <Link to="/signup"><button className='sign_up_btn'>Sign up</button></Link>
            </div>
            </div>
       </div>

@@ -33,6 +33,7 @@
     font-size: 18px;
     line-height: 21px;
     cursor: pointer;
+    color: #C00511;
 }
 .login_btn:hover{
     background: #ddd;
@@ -47,14 +48,9 @@
     font-size: 18px;
     line-height: 21px;
     cursor: pointer;
+    color:#FFFFFF;
 }
 .sign_up_btn:hover{
     background:#b16c71;
+}
 
-}
-.link_sign_up{
-    color:#FFFFFF;
-}
-.link_login{
-    color: #C00511;
-}

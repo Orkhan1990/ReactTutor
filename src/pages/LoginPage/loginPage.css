@@ -41,6 +41,9 @@ form {
     border-right: none;
     outline: none;
 }
+.login_input input[type="text"]{
+    background: none;
+}
 
 .login_forgot_password {
     font-weight: 400;
@@ -67,5 +70,21 @@ form {
 }
 .login_page_btn:hover{
     background: #ddd;
+}
+
+.forward_sign_up{
+    background: #C00511;
+    border: 2px solid #C00511;
+    border-radius: 90px;
+    padding: 9px 97px 9px 97px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    color:#FFFFFF;
+    width: 100%;
+}
+.forward_sign_up:hover{
+    background: #c0051149;
 }
 

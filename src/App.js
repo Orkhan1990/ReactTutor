@@ -13,7 +13,6 @@ import SignupPage from "./pages/SignupPage/SignupPage";
       <Route path="/" element={<EntrancePage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/signup" element={<SignupPage/>}/>
-
       </Routes>
       </BrowserRouter>
     )

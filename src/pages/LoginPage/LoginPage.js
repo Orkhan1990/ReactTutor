@@ -20,6 +20,7 @@ import './loginPage.css';
             <Link className='login_forgot_password'>Forgot Password?</Link>
             <p></p>
             <button type='submit' className='login_page_btn'>Login</button>
+            <Link to="/signup"><button className='forward_sign_up'>Sign up</button></Link>
          </form>
       </div>
     )

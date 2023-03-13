@@ -1,0 +1,89 @@
+.sign_up_page_container {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: #FFFF
+}
+
+.sign_up_page_container h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 82px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.sign_up_input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sign_up_input label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.sign_up_input input {
+    border: 1px solid rgba(196, 196, 196, 0.61);
+    width: 330px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8B8B8B;
+    background: none;
+}
+
+.signupPage_button {
+    padding: 9px 97px 9px 97px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #C00511;
+    border: 2px solid #C00511;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.signupPage_button:hover{
+    background: #c0051131;
+}
+.loginPage_button{
+    background: rgba(217, 217, 217, 0.16);
+    border: 1px solid #FFFFFF;
+    border-radius: 90px;
+    padding: 9px 105px 10px 104px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #C00511;
+    width: 100%;
+}
+.loginPage_button:hover{
+    background: #ddd;
+}
+.success{
+    color:rgba(13, 255, 0, 0.97);
+    font-weight: 500;
+}
+.error{
+    color:rgba(255, 0, 0, 0.76);
+    font-weight: 500;
+
+}
