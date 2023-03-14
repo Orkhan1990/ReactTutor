@@ -1,0 +1,19 @@
+export  const videoData=
+[
+    {
+        id:1,
+        video:'../../../videos/Jumanji_ I was a little boy.mp4',
+        title:'Jumanji'
+    },
+    {
+        id:2,
+        video:'../../../videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4',
+        title:'Marry Me'
+    },
+    {
+        id:3,
+        video: '../../../videos/KIMI _ Official Trailer _ HBO Max.mp4',
+        title:'Kimi (HBO Max)'
+    }
+
+]

@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import Navbar from "../../Navbar/Navbar";
 import { Link } from "react-router-dom";
+import Volume from "../../../images/Group 24.png";
+import Ellipse from '../../../images/Ellipse 3.png';
+import Play from '../../../images/Vector (2).png';
 import "./header.css";
 
 export default class Header extends Component {
+  state = {};
   render() {
     return (
       <div className="header_container">
@@ -31,18 +35,30 @@ export default class Header extends Component {
               rescueattempt.Jack, with no assistance from Alan.
             </p>
 
-            <div>
-                <div>
-                <i class="fa-regular fa-clock"></i>  
+            <div className="header_review">
+              <div className="review">
+                <i className="fa-regular fa-clock"></i>
                 <span>164 min.</span>
-                </div>
-                <div>
-                <i class="fa-regular fa-volume"></i>
+              </div>
+              <div className="review">
+                <img src={Volume} alt=""/>
                 <span>Subtitles</span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
+              </div>
+
+              <div className="review">
+                <img src={Ellipse} alt="" />
+                <span>Imdb: 9.1/10</span>
+              </div>
+            </div>
+            <div className="header_btns">
+              <button className="header_left_btn">
+               <img src={Play} alt="" />
+               <span>Watch Now</span> 
+              </button>
+              <button className="header_right_btn">
+                <span className="header_plus_icon">+</span>
+                <span>Add List</span>
+              </button>
             </div>
           </div>
         </div>

@@ -1,0 +1,24 @@
+.title_side{
+    display: flex;
+    align-items: center;
+    gap:43px;
+}
+.title_side h2{
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.view_all{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.view_all a{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #C4C4C4;
+}
+

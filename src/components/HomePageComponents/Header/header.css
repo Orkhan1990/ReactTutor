@@ -5,14 +5,17 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+
 .bg_fon {
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
 }
+
 .header_content {
   margin-left: 135px;
   margin-top: 152px;
 }
+
 .header_content h1 {
   font-weight: 900;
   font-size: 54px;
@@ -26,6 +29,7 @@
   display: flex;
   gap: 24px;
 }
+
 .category {
   font-weight: 300;
   font-size: 18px;
@@ -33,9 +37,11 @@
   text-align: center;
   color: #ffffff;
 }
+
 .comedy {
   position: relative;
 }
+
 .comedy::after {
   position: absolute;
   content: "";
@@ -45,6 +51,7 @@
   top: -2px;
   right: -12px;
 }
+
 .comedy::before {
   position: absolute;
   content: "";
@@ -54,6 +61,7 @@
   top: -2px;
   left: -12px;
 }
+
 .header_description {
   margin-top: 30px;
   width: 445px;
@@ -62,4 +70,79 @@
   line-height: 22px;
   color: #ffffff;
   margin-bottom: 43px;
+}
+
+.header_review {
+  display: flex;
+  gap: 34px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.header_btns {
+  display: flex;
+  margin-top: 45px;
+  gap: 47px;
+  align-items: center;
+
+}
+
+.header_left_btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 37px 15px 36px;
+  background: rgba(207, 0, 15, 0.9);
+  border-radius: 99px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header_left_btn:hover {
+  background: rgba(116, 6, 13, 0.825);
+}
+
+.header_left_btn span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.header_right_btn {
+  display: flex;
+  gap: 11px;
+  padding: 14px 35px 15px 29px;
+  background: linear-gradient(262.15deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 0.3px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 99px;
+  color: #C00511;
+  cursor: pointer;
+}
+
+.header_right_btn span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.header_plus_icon{
+  font-size: 30px !important;
+}
+.header_right_btn:hover{
+  background: rgb(66, 63, 63);
 }

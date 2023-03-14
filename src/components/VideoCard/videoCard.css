@@ -1,0 +1,31 @@
+.video_card{
+    min-width: 250px;
+    position: relative;
+}
+.video_card a{
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+color: #FFFF;
+}
+.video_card a:hover{
+    color: #C00511;
+}
+video{
+    width: 100%;
+    margin-bottom: 23px;
+}
+.video_play_icon{
+    position: absolute;
+    top:55px;
+    right:147px;
+    cursor: pointer;
+}
+
+.video_discard_icon{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+

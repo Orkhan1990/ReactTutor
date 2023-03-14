@@ -23,6 +23,9 @@
   line-height: 19px;
   text-align: center;
 }
+.navbar_link:hover{
+  color: gray;
+}
 
 .navbar_user_notf_icons {
   display: flex;

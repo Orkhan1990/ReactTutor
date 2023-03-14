@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/HomePageComponents/Header/Header';
+import Main from '../../components/HomePageComponents/Main/Main';
 import './homePage.css';
 
 export default class HomePage extends Component {
@@ -7,6 +8,7 @@ export default class HomePage extends Component {
     return (
       <div>
         <Header/>
+        <Main/>
       </div>
     )
   }
