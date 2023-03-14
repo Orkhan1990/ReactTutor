@@ -1,0 +1,58 @@
+.navbar_container {
+  display: flex;
+  max-width: 1170px;
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 49px;
+  justify-content: space-between;
+}
+.nav_logo {
+  width: 137px;
+  height: 22px;
+}
+.navbar_list {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.navbar_link {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.navbar_user_notf_icons {
+  display: flex;
+  gap: 58px;
+  color: #ffff;
+}
+.navbar_search input {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffff;
+  text-align:left
+}
+.navbar_search input::placeholder{
+    color: #ffff;
+}
+.navbar_search{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.navbar_icons{
+    display: flex;
+    align-items: center;
+    gap:28px;
+}
+.link_to_icon{
+    color:#ffff
+}

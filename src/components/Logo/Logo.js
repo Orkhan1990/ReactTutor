@@ -5,7 +5,7 @@ export default class Logo extends Component {
   render() {
     return (
       <div>
-        <img src={MovieLogo} alt="" />
+        <img src={MovieLogo} alt="" className={this.props.logoStyle}/>
       </div>
     )
   }

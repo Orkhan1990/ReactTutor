@@ -1,0 +1,65 @@
+.header_container {
+  background: url("../../../images/image\ 1\ \(1\).png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.bg_fon {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+.header_content {
+  margin-left: 135px;
+  margin-top: 152px;
+}
+.header_content h1 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 67px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 23px;
+}
+
+.header_content_list {
+  display: flex;
+  gap: 24px;
+}
+.category {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.comedy {
+  position: relative;
+}
+.comedy::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 30px;
+  width: 1px;
+  top: -2px;
+  right: -12px;
+}
+.comedy::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 30px;
+  width: 1px;
+  top: -2px;
+  left: -12px;
+}
+.header_description {
+  margin-top: 30px;
+  width: 445px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 43px;
+}

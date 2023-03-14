@@ -40,6 +40,7 @@ form {
     border-top: none;
     border-right: none;
     outline: none;
+    padding: 8px;
 }
 .login_input input[type="text"]{
     background: none;
@@ -86,5 +87,9 @@ form {
 }
 .forward_sign_up:hover{
     background: #c0051149;
+}
+.loginError{
+    color:red;
+    font-weight: 200;
 }
 
