@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import Title from "../../Title/Title";
 import VideoCard from "../../VideoCard/VideoCard";
 import { videoData } from "../../../data";
-import "./main.css";
 import SliderMovies from "../../SliderMovies/SliderMovies";
+import {popularMovie} from '../../../data';
+import {bestComedies} from '../../../data';
+import {actionAndAdventure} from '../../../data';
+import "./main.css";
 
 export default class Main extends Component {
   render() {
-    console.log(videoData);
     return (
       <div className="main_container">
         <div className="main_first_section">
@@ -26,10 +28,13 @@ export default class Main extends Component {
           </div>
         </div>
         <div className="main_second_section">
-         <SliderMovies/>
+         <SliderMovies titleData="Popular Movies 2022" popularMovieData={popularMovie}/>
         </div>
         <div>
-          <SliderMovies/>
+          <SliderMovies titleData="Best Comedies"  popularMovieData={bestComedies}/>
+        </div>
+        <div className="main_fourth_section">
+        <SliderMovies titleData="Action & Adventure"  popularMovieData={actionAndAdventure}/>
         </div>
       </div>
     );

@@ -1,0 +1,48 @@
+.footer_container {
+    background: #252423;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_nav {
+    max-width: 1170px;
+    margin-left: 134px;
+    margin-right: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.footer_links {
+    display: flex;
+    gap: 69px;
+}
+
+.footer_links a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #8B8B8B;
+}
+.footer_links a:hover{
+    color: #8a0606;
+}
+.footer_icons{
+    display: flex;
+    align-items: center;
+    gap:22px;
+}
+.footer_nav_logo{
+    height: 22px;
+    width: 137px;
+}
+.footer_play_market{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+}

@@ -5,6 +5,14 @@ import ThreeHundredFiftyFive from './images/355.png';
 import TurningRed from './images/turning red.png';
 import HarryPotr from './images/HarryPotr.png';
 import AdamProject from './images/AdamProject.png';
+import LateNight from './images/LightNight.png';
+import FreeGuy from './images/FreeGuy.png';
+import TheKingsOfIsland from './images/KingOfIsland.png';
+import Dollitle from './images/Dollitle.png';
+import OneThousendNineHundredSeventeen from './images/1917.png';
+import BreakingBad from './images/BeakingBad.png';
+import Yesterday from './images/Yesterday.png';
+import GunsAkimbo from './images/GunsAkimbo.png';
 
 export  const videoData=
 [
@@ -47,5 +55,51 @@ export const popularMovie=[
         id:4,
         image:AdamProject,
         title:'The Adam Project'
+    }
+]
+
+export const bestComedies=[
+    {
+        id:1,
+        image:LateNight,
+        title:'Late Night'
+    },
+    {
+        id:2,
+        image:FreeGuy,
+        title:'Free Guy'
+    },
+    {
+        id:3,
+        image:TheKingsOfIsland,
+        title:'The king of Island'
+    },
+    {
+        id:4,
+        image:Dollitle,
+        title:'The Adam Project'
+    }
+]
+
+export const actionAndAdventure=[
+    {
+        id:1,
+        image:OneThousendNineHundredSeventeen,
+        title:'1917'
+    },
+    {
+        id:2,
+        image:BreakingBad,
+        title:'Breaking Bad'
+    },
+    {
+        id:3,
+        image:Yesterday,
+        title:'Yesterday'
+    },
+    {
+        id:4,
+        image:GunsAkimbo,
+        title:'Guns Akimbo'
     }
 ]
