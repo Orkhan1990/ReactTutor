@@ -2,15 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Play from '../../images/Play.png';
 import Discard from '../../images/Vector (3).png';
-
 import './videoCard.css';
 
 export default class VideoCard extends Component {
-   
+  state={
+    status:false,
+    playIcon:'../../images/Play.png'
+  }
+
   render() {
    const playVideo=(id)=>{
-     let videoElement=document.getElementById('video');
-     videoElement.play();
+    
+    //  let videoElement=document.getElementById('video');
+    
     }
     return (
       <div className='video_card'>

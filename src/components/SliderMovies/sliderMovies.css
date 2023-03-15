@@ -1,0 +1,36 @@
+.sliderMovies_container {
+  display: flex;
+  align-items: center;
+  margin-left: 86px;
+  margin-top: 80px;
+}
+.sliderMovies_content {
+  max-width: 1170px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.sliderMovies_cards_grid {
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.sliderMovies_btn {
+padding: 9px 21px 11px 20px;
+  margin-top: 52px;
+  background: #c00511;
+  border-radius: 99px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+.sliderMovies_btn:hover{
+    background: #c005113b;
+
+}

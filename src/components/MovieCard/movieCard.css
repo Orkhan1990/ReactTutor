@@ -1,0 +1,12 @@
+.movieCard {
+  min-width: 265px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.movieCard h2 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
