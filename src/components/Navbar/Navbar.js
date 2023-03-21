@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default class Navbar extends Component {
+ 
   render() {
+    function logOutFromPage(e){
+         e.preventDefault();
+         window.location.href='/';
+         localStorage.removeItem('logedUser');
+    }
     return (
       <div className="navbar_container">
         <Logo logoStyle="nav_logo"/>
@@ -33,7 +39,10 @@ export default class Navbar extends Component {
 
             <div className="navbar_icons">
             <Link className="link_to_icon"><i className="fa-regular fa-bell"></i></Link>
-            <Link className="link_to_icon"><i className="fa-regular fa-user"></i></Link>
+            <div className="navbar_loged_user">
+              {JSON.parse(localStorage.getItem("logedUser")).name}
+            <Link className="link_to_icon" ref={this.takeIconElement} onClick={logOutFromPage}><i className="fa-solid fa-right-from-bracket"></i></Link>
+            </div>
             </div>
         </div>
       </div>

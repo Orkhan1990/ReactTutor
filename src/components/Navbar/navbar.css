@@ -59,3 +59,12 @@
 .link_to_icon{
     color:#ffff
 }
+
+.navbar_loged_user{
+  display: flex;
+  gap:5px;
+}
+.fa-right-from-bracket:hover{
+  color:rgb(109, 109, 151)
+}
+

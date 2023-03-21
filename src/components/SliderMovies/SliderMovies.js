@@ -6,26 +6,72 @@ import MovieCard from '../MovieCard/MovieCard';
 import './sliderMovies.css';
 
 export default class SliderMovies extends Component {
+  state={
+    leftArrow:React.createRef(),
+    rightArrow:React.createRef(),
+    cardSlider:React.createRef()
+  }
+ componentDidMount(){
+  let elements=this.state.cardSlider.current.children;
+ let count=0;
+ function slide(){
+  for(let i=0;i<elements.length;i++){
+     elements[i].style.transform=`translateX(${count*-300}px)`
+  }
+ }
+  setInterval(() => {
+    if(count<elements.length-4){
+      count++;
+      slide();
+    }else{
+       count=0;
+       slide();
+    }
+  }, 2000);
+    let leftElement=this.state.leftArrow.current;
+    leftElement.addEventListener('click',()=>{
+      if(count<elements.length-4){
+        count--;
+        slide()
+      }else{
+        count=0;
+        slide();
+      }
+    })
 
+    let rightElement=this.state.rightArrow.current;
+    rightElement.addEventListener('click',()=>{
+      if(count<elements.length-4){
+        count++;
+        slide();
+      }else{
+        count=0;
+        slide();
+      }
+    })
+ }
   render() {
-    console.log(this.props.popularMovieData)
+   
+   
+    const{titleData,movieData}=this.props;
+    const{leftArrow,rightArrow,cardSlider}=this.state;
     return (
       <div className='sliderMovies_container'>
-        <img src= {LeftRow} alt=""/>
+        <img src= {LeftRow} alt="" ref={leftArrow} className="arrow" />
         <div className='sliderMovies_content'>
-        <Title title={this.props.titleData}/>
-        <div className='sliderMovies_cards_grid'>
+        <Title title={titleData}/>
+        <div className='sliderMovies_cards_grid' ref={cardSlider}>
         {
-            this.props.popularMovieData?.map((item,index)=>{
+            movieData?.map((item,index)=>{
               return(
-                <MovieCard img={item.image} title={item.title} id={item.id} key={item.id}/>
+                <MovieCard data={item} key={index}/>
               )
             })
         }
         </div>
         <button type="" className='sliderMovies_btn'>Load More</button>
         </div>
-        <img src={RightRow} alt=""/>
+        <img src={RightRow} alt="" ref={rightArrow} className="arrow"/>
       </div>
     )
   }

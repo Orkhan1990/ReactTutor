@@ -1,6 +1,6 @@
-import Jumanji from './videos/Jumanji_ I was a little boy.mp4';
-import MarryMe from './videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4';
-import Kimi from './videos/KIMI _ Official Trailer _ HBO Max.mp4';
+// import Jumanji from './videos/Jumanji_ I was a little boy.mp4';
+// import MarryMe from './videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4';
+// import Kimi from './videos/KIMI _ Official Trailer _ HBO Max.mp4';
 import ThreeHundredFiftyFive from './images/355.png';
 import TurningRed from './images/turning red.png';
 import HarryPotr from './images/HarryPotr.png';
@@ -14,25 +14,25 @@ import BreakingBad from './images/BeakingBad.png';
 import Yesterday from './images/Yesterday.png';
 import GunsAkimbo from './images/GunsAkimbo.png';
 
-export  const videoData=
-[
-    {
-        id:1,
-        video:Jumanji,
-        title:'Jumanji'
-    },
-    {
-        id:2,
-        video:MarryMe,
-        title:'Marry Me'
-    },
-    {
-        id:3,
-        video: Kimi,
-        title:'Kimi (HBO Max)'
-    }
+// export  const videoData=
+// [
+//     {
+//         id:1,
+//         video:Jumanji,
+//         title:'Jumanji'
+//     },
+//     {
+//         id:2,
+//         video:MarryMe,
+//         title:'Marry Me'
+//     },
+//     {
+//         id:3,
+//         video: Kimi,
+//         title:'Kimi (HBO Max)'
+//     }
 
-]
+// ]
 
 
 export const popularMovie=[

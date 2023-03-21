@@ -11,10 +11,11 @@
 }
 .sliderMovies_cards_grid {
   max-width: 1170px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  display: flex;
   gap: 10px;
   margin-top: 32px;
+  overflow: hidden;
+
 }
 
 .sliderMovies_btn {
@@ -33,4 +34,7 @@ padding: 9px 21px 11px 20px;
 .sliderMovies_btn:hover{
     background: #c005113b;
 
+}
+.arrow{
+  cursor: pointer;
 }
