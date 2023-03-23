@@ -29,3 +29,15 @@ video{
     right:20px;
     cursor: pointer;
 }
+.fa-circle-pause{
+    position: absolute;
+    color:white;
+    font-size: 48px;
+    top:90px;
+    right:147px;
+    cursor: pointer;
+}
+
+.hideIcon{
+    display: none;
+}
