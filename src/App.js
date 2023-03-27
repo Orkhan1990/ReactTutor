@@ -4,7 +4,7 @@ import EntrancePage from "./pages/EntrancePage/EntrancePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import HomePage from "./pages/HomePage/HomePage";
-
+import MoviePage from "./pages/MoviePage/MoviePage";
 
  class App extends Component{
   render(){
@@ -15,6 +15,7 @@ import HomePage from "./pages/HomePage/HomePage";
       <Route path="/home" element={<HomePage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/signup" element={<SignupPage/>}/>
+      <Route path="/movie" element={<MoviePage/>}/>
       </Routes>
       </BrowserRouter>
     )
