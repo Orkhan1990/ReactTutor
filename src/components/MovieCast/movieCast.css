@@ -1,0 +1,26 @@
+.movie_cast_card {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  gap: 25px;
+}
+
+.movie_cast_name_subname {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* justify-content: center; */
+}
+.movie_cast_name_subname h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c00511;
+}
+
+.movie_cast_name_subname h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}

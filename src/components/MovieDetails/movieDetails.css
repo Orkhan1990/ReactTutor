@@ -1,141 +1,189 @@
 .movie_details_component_container {
-    max-width: 1170px;
-    margin-left: 135px;
-    margin-right: 135px;
-    margin-top: 71px;
+  max-width: 1170px;
+  margin-left: 135px;
+  margin-right: 135px;
+  margin-top: 71px;
 }
 
 .movie_details_component_container h1 {
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 38px;
-    color: #FFFFFF;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
 }
 
 .movie_details_component_content {
-    display: flex;
-    margin-top: 28px;
-    margin-bottom: 24px;
-    gap: 109px;
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  gap: 109px;
 }
 
 .movie_details_component_review_detail {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #8B8B8B;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8b8b;
 }
 
 .movie_details_component_kimi_image {
-    filter: drop-shadow(0px 0px 9px rgba(69, 69, 69, 0.18));
-    border-radius: 4px;
+  filter: drop-shadow(0px 0px 9px rgba(69, 69, 69, 0.18));
+  border-radius: 4px;
 }
 
 .movie_details_component_left_side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 .movie_details_component_review {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .movie_details_component_hd {
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 2px 2px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 2px 2px;
 }
 
 .movie_details_component_right_side_list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 29px;
-    gap: 48px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #8B8B8B;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+  gap: 48px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #8b8b8b;
+  cursor: pointer;
 }
 
 .movie_details_component_right_side_list li {
-    padding: 0px 0px 5px 0px;
+  padding: 0px 0px 5px 0px;
 }
 
 .movie_details_component_right_side_list li:hover {
-    color: red;
-    border: 1px solid;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    padding: 0px 0px 4px 0px;
-
+  color: red;
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 0px 0px 4px 0px;
 }
 
 .movie_details_component_right_side_paragraph {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    background: linear-gradient(177.88deg, #8B8B8B 43.47%, rgba(139, 139, 139, 0) 119.2%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    width: 100%;
-    margin-bottom: 69px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  background: linear-gradient(
+    177.88deg,
+    #8b8b8b 43.47%,
+    rgba(139, 139, 139, 0) 119.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
+  margin-bottom: 69px;
 }
 
 .movie_details_component_right_side_buttons {
-    display: flex;
-    gap: 84px;
-    align-items: center;
+  display: flex;
+  gap: 84px;
+  align-items: center;
 }
 
 .movie_details_component_right_side_play_button {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: #C00511;
-    border-radius: 90px;
-    padding: 14px 57px 11px 54px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #c00511;
+  border-radius: 90px;
+  padding: 14px 57px 11px 54px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .movie_details_component_right_side_play_button span {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
 }
-.movie_details_component_right_side_icon_list{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    color: #FFFFFF;
-    font-size: 20px;
+.movie_details_component_right_side_icon_list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #ffffff;
+  font-size: 20px;
 }
-.movie_details_component_right_side_make_circle{
-    border:1px solid  #8B8B8B;
-    border-radius: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.movie_details_component_right_side_make_circle {
+  border: 1px solid #8b8b8b;
+  border-radius: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.movie_details_component_right_side_make_circle:hover{
- color: #C00511;  
- border:1px solid  #C00511;  
+.movie_details_component_right_side_make_circle:hover {
+  color: #c00511;
+  border: 1px solid #c00511;
 }
-.movie_details_component_right_side_make_circle img{
-    object-fit: cover;
-    font-size: 5px;
-    transform: scale(0.8);
+.movie_details_component_right_side_make_circle img {
+  object-fit: cover;
+  font-size: 5px;
+  transform: scale(0.8);
+}
+
+.movie_details_component_cast_side {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.movie_details_component_cast_side_container h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.movie_details_component_cast_side_container {
+  max-width: 288px;
+  padding-left: 50px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.movie_details_component_about_video_side {
+  display: flex;
+  gap: 198px;
+}
+
+.fa-angles-down {
+  color: #ffffff;
+  cursor: pointer;
+}
+.movie_details_component_video_detail_cards {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 27px;
+}
+
+.movie_details_component_category_and_videos h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7a7a7a;
+  margin-bottom: 33px;
 }

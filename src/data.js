@@ -1,6 +1,4 @@
-// import Jumanji from './videos/Jumanji_ I was a little boy.mp4';
-// import MarryMe from './videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4';
-// import Kimi from './videos/KIMI _ Official Trailer _ HBO Max.mp4';
+
 import ThreeHundredFiftyFive from './images/355.png';
 import TurningRed from './images/turning red.png';
 import HarryPotr from './images/HarryPotr.png';
@@ -13,27 +11,11 @@ import OneThousendNineHundredSeventeen from './images/1917.png';
 import BreakingBad from './images/BeakingBad.png';
 import Yesterday from './images/Yesterday.png';
 import GunsAkimbo from './images/GunsAkimbo.png';
-
-// export  const videoData=
-// [
-//     {
-//         id:1,
-//         video:Jumanji,
-//         title:'Jumanji'
-//     },
-//     {
-//         id:2,
-//         video:MarryMe,
-//         title:'Marry Me'
-//     },
-//     {
-//         id:3,
-//         video: Kimi,
-//         title:'Kimi (HBO Max)'
-//     }
-
-// ]
-
+import ZoëKravitz from './images/Zoë_Kravitz.png';
+import ByronBowers from './images/Byron_Bowers.png';
+import RitaWilson from './images/Rita_Wilson.png';
+import SaraiKoo from './images/Sarai_Koo.png';
+import JaimeCamil from './images/Jaime_Camil.png';
 
 export const popularMovie=[
     {
@@ -102,4 +84,39 @@ export const actionAndAdventure=[
         image:GunsAkimbo,
         title:'Guns Akimbo'
     }
+]
+
+export const movieCast=[
+
+    {
+        id:1,
+        image:ZoëKravitz,
+        name:'Zoë Kravitz',
+        subName:'as Angela Childs'
+    },
+    {
+        id:2,
+        image:ByronBowers,
+        name:'Byron Bowers',
+        subName:'as Terry Hughes'
+    },
+    {
+        id:3,
+        image:RitaWilson,
+        name:'Rita Wilson',
+        subName:'as Natalie Chowdhury'
+    },
+    {
+        id:4,
+        image:SaraiKoo,
+        name:'Sarai Koo',
+        subName:'as Jessica Hasling'
+    },
+    {
+        id:5,
+        image:JaimeCamil,
+        name:'Jaime Camil',
+        subName:'as Antonio Rivas'
+    }
+
 ]

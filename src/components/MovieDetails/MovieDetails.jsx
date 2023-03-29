@@ -4,10 +4,35 @@ import PlayIcon from '../../images/Vector (2).png';
 import RefreshIcon from '../../images/refresh.png';
 import DownloadIcon from '../../images/download.png';
 import ForwardIcon from '../../images/forward.png';
+import MovieCast from "../MovieCast/MovieCast";
+// import { movieCast } from "../../data";
 import "./movieDetails.css";
+import { getMovieCastData,getVideoDetails} from "../../config/MainConfig";
+import VideoDetails from "../VideoDetails/VideoDetails";
+import SliderMovies from "../SliderMovies/SliderMovies";
 
 export default class MovieDetails extends Component {
+  state={
+    movieCastData:[],
+    videoDetailsData:[]
+  }
+  componentDidMount(){
+    getMovieCastData()
+    .then(data=>{
+      this.setState({
+        movieCastData:data
+      })
+    });
+
+    getVideoDetails()
+    .then(data=>{
+      this.setState({
+        videoDetailsData:data
+      })
+    })
+  }
   render() {
+    const{movieCastData,videoDetailsData}=this.state;
     return (
       <div className="movie_details_component_container">
         <h1>Kimi (HBO Max)</h1>
@@ -88,6 +113,31 @@ export default class MovieDetails extends Component {
             </div>
           </div>
         </div>
+        <div className="movie_details_component_about_video_side">
+                <div className="movie_details_component_cast_side_container">
+                  <h2>CAST</h2>
+                  <div className="movie_details_component_cast_side">
+                  {movieCastData.map((data,index)=>{
+                    return(
+                      <MovieCast data={data} key={index}/>
+                    )
+                  })}
+                 </div>
+                 <i className="fa-solid fa-angles-down"></i>
+                </div>
+                <div className="movie_details_component_category_and_videos">
+                  <h2>VIDEOS:TRAILERS,TEASERS,FEATURETTES</h2>
+                  <div className="movie_details_component_video_detail_cards">
+                     {
+                        videoDetailsData.map((data,index)=>{
+                          return <VideoDetails data={data} key={index}/>
+                        })
+                     }
+                  </div>
+                </div>
+
+        </div>
+        <SliderMovies titleData="My List"  movieData=""/>
       </div>
     );
   }

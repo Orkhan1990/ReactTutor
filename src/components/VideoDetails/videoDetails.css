@@ -1,0 +1,16 @@
+.video_details_component_container{
+  
+    position: relative;
+    min-width: 300px;
+}
+.video_details_component_play_icon{
+ position: absolute;
+ top:80px;
+ right: 145px;
+ cursor: pointer;
+}
+.video_details_component_video_itself{
+    height: 210px !important;
+    margin-bottom: 0px !important;
+    border-radius: 40px;
+}
