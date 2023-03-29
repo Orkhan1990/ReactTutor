@@ -45,3 +45,11 @@ export const getVideoDetails=async()=>{
         return resp.data;
     })
 }
+
+const hard="hard";
+export const getVideosDataForSlider= async()=>{
+  return await axios.get(baseUrl+hard)
+  .then(resp=>{
+   return resp.data.results;
+  })
+}

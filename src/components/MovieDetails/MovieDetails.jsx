@@ -7,14 +7,15 @@ import ForwardIcon from '../../images/forward.png';
 import MovieCast from "../MovieCast/MovieCast";
 // import { movieCast } from "../../data";
 import "./movieDetails.css";
-import { getMovieCastData,getVideoDetails} from "../../config/MainConfig";
+import { getMovieCastData,getVideoDetails,getVideosDataForSlider} from "../../config/MainConfig";
 import VideoDetails from "../VideoDetails/VideoDetails";
 import SliderMovies from "../SliderMovies/SliderMovies";
 
 export default class MovieDetails extends Component {
   state={
     movieCastData:[],
-    videoDetailsData:[]
+    videoDetailsData:[],
+    videoArrayForSlider:[]
   }
   componentDidMount(){
     getMovieCastData()
@@ -29,11 +30,21 @@ export default class MovieDetails extends Component {
       this.setState({
         videoDetailsData:data
       })
+    });
+
+    getVideosDataForSlider()
+    .then(data=>{
+      this.setState({
+        videoArrayForSlider:data
+      })
     })
+
+
   }
   render() {
-    const{movieCastData,videoDetailsData}=this.state;
+    const{movieCastData,videoDetailsData,videoArrayForSlider}=this.state;
     return (
+      <div>
       <div className="movie_details_component_container">
         <h1>Kimi (HBO Max)</h1>
         <div className="movie_details_component_content">
@@ -137,7 +148,8 @@ export default class MovieDetails extends Component {
                 </div>
 
         </div>
-        <SliderMovies titleData="My List"  movieData=""/>
+      </div>
+      <SliderMovies titleData="My List"  movieData={videoArrayForSlider}/>
       </div>
     );
   }
