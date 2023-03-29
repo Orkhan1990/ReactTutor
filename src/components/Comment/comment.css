@@ -1,0 +1,38 @@
+.comment_component_container {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.comment_component_name_time {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.comment_component_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment_component_name_time h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.comment_component_name_time span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B8B8B;
+}
+
+.comment_component_content p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}

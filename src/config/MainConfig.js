@@ -53,3 +53,10 @@ export const getVideosDataForSlider= async()=>{
    return resp.data.results;
   })
 }
+
+export const getCommentData=async()=>{
+    return await axios.get('./mainData/commentData.json')
+    .then(resp=>{
+        return resp.data
+    })
+}

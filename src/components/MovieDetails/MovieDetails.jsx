@@ -5,17 +5,18 @@ import RefreshIcon from '../../images/refresh.png';
 import DownloadIcon from '../../images/download.png';
 import ForwardIcon from '../../images/forward.png';
 import MovieCast from "../MovieCast/MovieCast";
-// import { movieCast } from "../../data";
 import "./movieDetails.css";
-import { getMovieCastData,getVideoDetails,getVideosDataForSlider} from "../../config/MainConfig";
+import { getMovieCastData,getVideoDetails,getVideosDataForSlider,getCommentData} from "../../config/MainConfig";
 import VideoDetails from "../VideoDetails/VideoDetails";
 import SliderMovies from "../SliderMovies/SliderMovies";
+import Comment from "../Comment/Comment";
 
 export default class MovieDetails extends Component {
   state={
     movieCastData:[],
     videoDetailsData:[],
-    videoArrayForSlider:[]
+    videoArrayForSlider:[],
+    commentArr:[]
   }
   componentDidMount(){
     getMovieCastData()
@@ -37,12 +38,18 @@ export default class MovieDetails extends Component {
       this.setState({
         videoArrayForSlider:data
       })
+    });
+    getCommentData()
+    .then(data=>{
+      this.setState({
+        commentArr:data
+      })
     })
 
 
   }
   render() {
-    const{movieCastData,videoDetailsData,videoArrayForSlider}=this.state;
+    const{movieCastData,videoDetailsData,videoArrayForSlider,commentArr}=this.state;
     return (
       <div>
       <div className="movie_details_component_container">
@@ -150,6 +157,22 @@ export default class MovieDetails extends Component {
         </div>
       </div>
       <SliderMovies titleData="My List"  movieData={videoArrayForSlider}/>
+      <div className="movie_details_comment_section">
+        <h2 className="movie_details_comment_header">Comments (30)</h2>
+        <div className="movie_details_comment_cards">
+          {
+            commentArr.map((data,index)=>{
+              return(
+                <Comment data={data} key={index}/>
+              )
+            })
+          }
+        </div>
+        <div className="movie_details_comment_read_more">
+          <span>Read more</span>
+          <i className="fa-solid fa-angles-down"></i>
+        </div>
+      </div>
       </div>
     );
   }

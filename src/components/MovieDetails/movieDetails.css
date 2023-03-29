@@ -82,11 +82,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  background: linear-gradient(
-    177.88deg,
-    #8b8b8b 43.47%,
-    rgba(139, 139, 139, 0) 119.2%
-  );
+  background: linear-gradient(177.88deg,
+      #8b8b8b 43.47%,
+      rgba(139, 139, 139, 0) 119.2%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -118,6 +116,7 @@
   line-height: 23px;
   color: #ffffff;
 }
+
 .movie_details_component_right_side_icon_list {
   display: flex;
   align-items: center;
@@ -125,6 +124,7 @@
   color: #ffffff;
   font-size: 20px;
 }
+
 .movie_details_component_right_side_make_circle {
   border: 1px solid #8b8b8b;
   border-radius: 100%;
@@ -133,10 +133,12 @@
   align-items: center;
   cursor: pointer;
 }
+
 .movie_details_component_right_side_make_circle:hover {
   color: #c00511;
   border: 1px solid #c00511;
 }
+
 .movie_details_component_right_side_make_circle img {
   object-fit: cover;
   font-size: 5px;
@@ -148,6 +150,7 @@
   flex-direction: column;
   gap: 15px;
 }
+
 .movie_details_component_cast_side_container h2 {
   font-weight: 600;
   font-size: 18px;
@@ -164,6 +167,7 @@
   align-items: center;
   gap: 15px;
 }
+
 .movie_details_component_about_video_side {
   display: flex;
   gap: 198px;
@@ -173,6 +177,7 @@
   color: #ffffff;
   cursor: pointer;
 }
+
 .movie_details_component_video_detail_cards {
   max-width: 700px;
   display: grid;
@@ -186,4 +191,46 @@
   line-height: 19px;
   color: #7a7a7a;
   margin-bottom: 33px;
+}
+
+.movie_details_comment_section {
+  max-width: 1170px;
+  margin-left: 134px;
+  margin-right: 136px;
+  margin-top: 188px;
+}
+
+.movie_details_comment_header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.movie_details_comment_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.movie_details_comment_read_more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding-left: 15px;
+  margin-bottom: 71px;
+  cursor: pointer;
+}
+
+.movie_details_comment_read_more span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8B8B8B !important
+}
+.movie_details_comment_read_more i{
+  color: #8B8B8B !important
+
 }
