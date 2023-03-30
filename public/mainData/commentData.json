@@ -1,35 +1,35 @@
 [
     {
         "id":1,
-        "image":"../../src/images/Kukiriza.png",
+        "image":"./image/Kukiriza.png",
         "name":"Kukkiriza Emmanuel",
         "time":"4 months ago",
         "comment":"Love Zoe and I'm happy to have more of her this year"
     },
     {
         "id":2,
-        "image":"../../src/images/Tyler.png",
+        "image":"./image/Tyler.png",
         "name":"Tyler659",
         "time":"1months ago",
         "comment":"I really loved this movie, higsshly recommend for her acting skills. Reminded me of Halle Berry's hay days when she would do very unique films. Also blue hair really look good on her 😁 💙"
     },
     {
         "id":3,
-        "image":"../../src/images/underablack.png",
+        "image":"./image/underablack.png",
         "name":"underablackgaze",
         "time":"1 day ago",
         "comment":"The only thing this trailer left out was the motive for the crime.She discovers what might be a crime. She reports the crime. The authorities find nothing. She pursues the issue. Someone warns her to let it go. She continues pursuit. She finds a possible ally. The authorities become antagonistic to her. She and the ally band together to find proof. They find it yet the ally is killed. Someone within the authorities is a second ally unbeknownst to her. The motive of the crime is revealed..."
     },
     {
         "id":4,
-        "image":"../../src/images/underablack.png",
+        "image":"./image/underablack.png",
         "name":"underablackgaze",
         "time":"1 day ago",
         "comment":"The only thing this trailer left out was the motive for the crime.She discovers what might be a crime. She reports the crime. The authorities find nothing. She pursues the issue. Someone warns her to let it go. She continues pursuit. She finds a possible ally. The authorities become antagonistic to her. She and the ally band together to find proof. They find it yet the ally is killed. Someone within the authorities is a second ally unbeknownst to her. The motive of the crime is revealed..."
     },
     {
         "id":5,
-        "image":"../../src/images/luis.png",
+        "image":"./image/luis.png",
         "name":"Luis Pinto",
         "time":"2 months ago",
         "comment":"Looks like a very good episode of Black Mirror 😍"

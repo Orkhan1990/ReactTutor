@@ -82,9 +82,11 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  background: linear-gradient(177.88deg,
-      #8b8b8b 43.47%,
-      rgba(139, 139, 139, 0) 119.2%);
+  background: linear-gradient(
+    177.88deg,
+    #8b8b8b 43.47%,
+    rgba(139, 139, 139, 0) 119.2%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -166,11 +168,12 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  min-width: 266px;
 }
 
 .movie_details_component_about_video_side {
   display: flex;
-  gap: 198px;
+  gap: 160px;
 }
 
 .fa-angles-down {
@@ -204,7 +207,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 45px;
 }
 
@@ -212,6 +215,28 @@
   display: flex;
   flex-direction: column;
   gap: 61px;
+  position: relative;
+
+}
+
+.movie_details_spoiler_alert {
+  position: absolute;
+  width: 1100px;
+  height: 105px;
+  left: -15px;
+  top: 240px;
+  background: linear-gradient(
+    262.15deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 0.3px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff
 }
 
 .movie_details_comment_read_more {
@@ -219,7 +244,7 @@
   align-items: center;
   gap: 8px;
   margin-top: 20px;
-  padding-left: 15px;
+  padding-left: 66px;
   margin-bottom: 71px;
   cursor: pointer;
 }
@@ -228,9 +253,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: #8B8B8B !important
+  color: #8b8b8b !important;
 }
-.movie_details_comment_read_more i{
-  color: #8B8B8B !important
-
+.movie_details_comment_read_more i {
+  color: #8b8b8b !important;
 }

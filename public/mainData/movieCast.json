@@ -2,35 +2,35 @@
 [
     {
         "id":1,
-        "image":"./images/Zoë_Kravitz.png",
+        "image":"./image/Zoë_Kravitz.png",
         "name":"Zoë Kravitz",
         "subName":"as Angela Childs"
 
     },
     {
         "id":2,
-        "image":"../src/images/Byron_Bowers.png",
+        "image":"./image/Byron_Bowers.png",
         "name":"Byron Bowers",
         "subName":"as Terry Hughes"
 
     },
     {
         "id":3,
-        "image":"../src/images/Rita_Wilson.png",
+        "image":"./image/Rita_Wilson.png",
         "name":"Rita Wilson",
         "subName":"as Natalie Chowdhury"
 
     },
     {
         "id":4,
-        "image":"../src/images/Sarai_Koo.png",
+        "image":"./image/Sarai_Koo.png",
         "name":"Sarai Koo",
         "subName":"as Jessica Hasling"
 
     },
     {
         "id":5,
-        "image":"../src/images/Jaime_Camil.png",
+        "image":"./image/Jaime_Camil.png",
         "name":"Jaime Camil",
         "subName":"as Antonio Rivas"
 
