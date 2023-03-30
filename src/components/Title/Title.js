@@ -12,7 +12,7 @@ export default class Title extends Component {
          <img src={Line} alt="" />
         </div>
         <div className='view_all'>
-            <Link>View all</Link>n
+            <Link>View all</Link>
         </div>
         
       </div>

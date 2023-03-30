@@ -14,3 +14,6 @@
     margin-bottom: 0px !important;
     border-radius: 40px;
 }
+.hide_video{
+    display: none;
+}

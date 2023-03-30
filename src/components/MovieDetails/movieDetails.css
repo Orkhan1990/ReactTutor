@@ -56,13 +56,14 @@
 .movie_details_component_right_side_list {
   display: flex;
   align-items: center;
-  margin-bottom: 29px;
+  /* margin-bottom: 29px; */
   gap: 48px;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: #8b8b8b;
   cursor: pointer;
+  height: 60px;
 }
 
 .movie_details_component_right_side_list li {
@@ -75,7 +76,8 @@
   border-left: none;
   border-right: none;
   border-top: none;
-  padding: 0px 0px 4px 0px;
+  padding: 0px 0px 5px 0px;
+  transition: 1.5s;
 }
 
 .movie_details_component_right_side_paragraph {
@@ -110,6 +112,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+.movie_details_component_right_side_play_button:hover{
+  background: #c0051141;
+  transition: 0.5s;
+
 }
 
 .movie_details_component_right_side_play_button span {
