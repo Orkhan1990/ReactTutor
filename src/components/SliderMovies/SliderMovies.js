@@ -9,7 +9,7 @@ export default class SliderMovies extends Component {
   state={
     leftArrow:React.createRef(),
     rightArrow:React.createRef(),
-    cardSlider:React.createRef()
+    cardSlider:React.createRef(),
   }
  componentDidMount(){
   let elements=this.state.cardSlider.current.children;
@@ -53,7 +53,7 @@ export default class SliderMovies extends Component {
   render() {
    
    
-    const{titleData,movieData}=this.props;
+    const{titleData,movieData,show}=this.props;
     const{leftArrow,rightArrow,cardSlider}=this.state;
     return (
       <div className='sliderMovies_container'>
@@ -69,7 +69,7 @@ export default class SliderMovies extends Component {
             })
         }
         </div>
-        <button type="" className='sliderMovies_btn'>Load More</button>
+        {show&&<button type="" className='sliderMovies_btn'>Load More</button>}
         </div>
         <img src={RightRow} alt="" ref={rightArrow} className="arrow"/>
       </div>

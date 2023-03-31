@@ -10,7 +10,8 @@ export default class Main extends Component {
     videoArr:[],
     popularMovieArr:[],
     comedyMovieArr:[],
-    actionMovieArr:[]
+    actionMovieArr:[],
+    show:true
   }
   componentDidMount(){
    getVideoData()
@@ -42,7 +43,7 @@ export default class Main extends Component {
    })
   }
   render() {
-    const{videoArr,popularMovieArr,comedyMovieArr,actionMovieArr}=this.state;
+    const{videoArr,popularMovieArr,comedyMovieArr,actionMovieArr,show}=this.state;
     // console.log(this.state.actionMovieArr);
     return (
       <div className="main_container">
@@ -60,13 +61,13 @@ export default class Main extends Component {
           </div>
         </div>
         <div className="main_second_section">
-         <SliderMovies titleData="Popular Movies 2022" movieData={popularMovieArr}/>
+         <SliderMovies titleData="Popular Movies 2022" movieData={popularMovieArr} show={show}/>
         </div>
         <div>
-          <SliderMovies titleData="Best Comedies"  movieData={comedyMovieArr}/>
+          <SliderMovies titleData="Best Comedies"  movieData={comedyMovieArr} show={show}/>
         </div>
         <div className="main_fourth_section">
-        <SliderMovies titleData="Action & Adventure"  movieData={actionMovieArr}/>
+        <SliderMovies titleData="Action & Adventure"  movieData={actionMovieArr} show={show}/>
         </div>
       </div>
     );

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import KimiMovieImage from "../../images/kimi-movie-deatils.png";
 import PlayIcon from "../../images/Vector (2).png";
-import RefreshIcon from "../../images/refresh.png";
-import DownloadIcon from "../../images/download.png";
-import ForwardIcon from "../../images/forward.png";
+import DownloadIcon from '@mui/icons-material/Download';
 import MovieCast from "../MovieCast/MovieCast";
 import "./movieDetails.css";
 import {
@@ -22,6 +20,7 @@ export default class MovieDetails extends Component {
     videoDetailsData: [],
     videoArrayForSlider: [],
     commentArr: [],
+    show:false
   };
   componentDidMount() {
     getMovieCastData().then((data) => {
@@ -48,7 +47,7 @@ export default class MovieDetails extends Component {
     });
   }
   render() {
-    const { movieCastData, videoDetailsData, videoArrayForSlider, commentArr } =
+    const { movieCastData, videoDetailsData, videoArrayForSlider, commentArr,show } =
       this.state;
     return (
       <div>
@@ -121,16 +120,16 @@ export default class MovieDetails extends Component {
 
                 <div className="movie_details_component_right_side_icon_list">
                   <div className="movie_details_component_right_side_make_circle">
-                    <img src={RefreshIcon} alt="" />
+                    <i className="fa-solid fa-arrow-rotate-right"></i>
                   </div>
                   <div className="movie_details_component_right_side_make_circle">
                     <i className="fa-regular fa-bookmark"></i>
                   </div>
                   <div className="movie_details_component_right_side_make_circle">
-                    <img src={DownloadIcon} alt="" />
+                    {<DownloadIcon className="movie_details_component_download_icon"/>}
                   </div>
                   <div className="movie_details_component_right_side_make_circle">
-                    <img src={ForwardIcon} alt="" />
+                  <i className="fa-solid fa-share"></i>
                   </div>
                 </div>
               </div>
@@ -156,7 +155,7 @@ export default class MovieDetails extends Component {
             </div>
           </div>
         </div>
-        <SliderMovies titleData="My List" movieData={videoArrayForSlider} />
+        <SliderMovies titleData="My List" movieData={videoArrayForSlider} show={show} />
         <div className="movie_details_comment_section">
           <h2 className="movie_details_comment_header">Comments (30)</h2>
           <div className="movie_details_comment_cards">

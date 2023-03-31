@@ -12,7 +12,7 @@
 }
 .navbar_list {
   display: flex;
-  gap: 60px;
+  gap: 38px;
   justify-content: space-between;
 }
 
@@ -29,7 +29,7 @@
 
 .navbar_user_notf_icons {
   display: flex;
-  gap: 58px;
+  /* gap: 58px; */
   color: #ffff;
 }
 .navbar_search input {
